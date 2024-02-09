@@ -49,9 +49,12 @@ coverage.xml
 *.py,cover
 .hypothesis/
 .pytest_cache/
+assets/
 cover/
 logs
 test-results
+*.html
+*.xml
 
 # Translations
 *.mo

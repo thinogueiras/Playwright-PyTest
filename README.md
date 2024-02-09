@@ -24,7 +24,13 @@ playwright install
 ## Execução dos testes:
 
 ```
-pytest tests/submit_form.py 
+pytest --html=report.html tests/submit_form.py
+```
+
+## Execução dos testes em paralelo:
+
+```
+pytest --html=report.html --numprocesses 7 tests/submit_form.py
 ```
 
 ---
