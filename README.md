@@ -1,4 +1,4 @@
-# Testes Automatizados de UI com Python e Playwright.
+# Testes Automatizados de UI com Playwright e PyTest.
 
 ## Pré-requisitos mínimos de ambiente:
 
