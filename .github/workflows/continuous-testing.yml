@@ -21,13 +21,15 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies ➕➕
-        run: pip install -r requirements.txt
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
 
       - name: Install Playwright ➕➕
-        run: playwright install --with-deps
+        run: python -m playwright install --with-deps
 
       - name: Run tests 🧪🧪
-        run: pytest --html=report.html tests/submit_form.py
+        run: pytest --html=reports/report.html tests/submitForm.py
 
       - name: Publish Reports 📄📄
         uses: actions/upload-artifact@v4
