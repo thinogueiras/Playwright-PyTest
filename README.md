@@ -1,7 +1,5 @@
 # Automação de Testes de UI com PyTest e Playwright.
 
-[![Playwright Tests](https://github.com/thinogueiras/Playwright-PyTest/actions/workflows/continuous-testing.yml/badge.svg?branch=main)](https://github.com/thinogueiras/Playwright-PyTest/actions/workflows/continuous-testing.yml)
-
 ## Pré-requisitos mínimos de ambiente:
 
 [Python](https://www.python.org/downloads/) 3.11.x.
@@ -26,13 +24,13 @@ playwright install
 ## Execução dos testes:
 
 ```
-pytest --headed --html=reports/report.html tests/submitForm.py
+pytest --html=reports/report.html tests/submitForm.py
 ```
 
 ## Execução dos testes em paralelo:
 
 ```
-pytest --headed --html=reports/report.html --numprocesses 7 tests/submitForm.py
+pytest --html=reports/report.html --numprocesses 7 tests/submitForm.py
 ```
 
 ---
