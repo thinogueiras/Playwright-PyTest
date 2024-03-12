@@ -1,10 +1,10 @@
-# Testes Automatizados de UI com Python e Playwright.
+# Automação de Testes de UI com PyTest e Playwright.
 
 ## Pré-requisitos mínimos de ambiente:
 
-[Python](https://www.python.org/downloads/) 3.10.12.
+[Python](https://www.python.org/downloads/) 3.11.x.
 
-[Node.js](https://nodejs.org/en) 18.17.1.
+[Node.js](https://nodejs.org/en) 18.17.x.
 
 
 ## Instalação do projeto:
@@ -24,13 +24,13 @@ playwright install
 ## Execução dos testes:
 
 ```
-pytest --html=report.html tests/submit_form.py
+pytest --headed --html=reports/report.html tests/submit_form.py
 ```
 
 ## Execução dos testes em paralelo:
 
 ```
-pytest --html=report.html --numprocesses 7 tests/submit_form.py
+pytest --headed --html=reports/report.html --numprocesses 7 tests/submit_form.py
 ```
 
 ---
